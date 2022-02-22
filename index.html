@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadSpace</title>
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="estilo.css">
+    <!--ICONOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--SLIDER O BANNER PRINCIPAL-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+</head>
+<body>
+
+    <div id="wrapper"> 
+       <div id="banner-wrapper"> 
+          <header>
+              <div class="header-inner"> 
+                 <a href="index.html" id="logo">
+                   <img src="./img/logo/logo.png" alt="logo">
+                </a>  
+                  
+                 <nav>
+                     <a href="index.html" id="menu-icon" >
+                         <i class="fa fa-bars"></i>
+                     </a>
+                       
+                     <ul>
+                         <li>
+                             <a href="index.html" class="current" >Inicio</a>
+                            </li>
+                         <li>
+                             <a href="./paginas/criticas.html">Críticas</a>
+                            </li> 
+                        
+                         <li>
+                             <a href="./paginas/contacto.html">Contacto</a>
+                            </li>
+                     </ul>
+                 </nav>
+             </div>
+          </header>
+
+          <section class="slide-wrap">  
+              <ul class="slider1">
+                  <li>
+                      <img src="img/slider/slider11.jpg" alt="cafelibro">
+                    </li>
+                  <li>
+                    <img src="img/slider/slider22.jpg" alt="playa libro">
+                    </li>
+                  <li>
+                    <img src="img/slider/slider33.jpg" alt="casa bosque libro">
+                    </li>
+                </ul>
+          </section>
+
+       </div> 
+    </div>
+
+         <section class="one-third" id="skills">
+          <div class="icon-wrap" >
+              <i class="fab fa-angellist" ></i>
+          </div>
+             <h3>Comparte tu obra</h3>
+             <a href="#">En ReadSpace tienes la posibilidad de compartir tu obra.</a>
+         </section>
+
+         <section class="one-third" id="skills">
+            <div class="icon-wrap" >
+                <i class="fas fa-book-open" ></i>
+            </div>
+               <h3>Cursos de Escritura Literaria</h3>
+               <a href="#">Aquí encontrarás enlaces a diversos cursos gratuitos de escritura, además de consejos
+                y recomendaciones.</a>
+           </section>
+
+           <section class="one-third" id="skills">
+            <div class="icon-wrap" >
+                <i class="fa fa-edit" ></i>
+            </div>
+               <h3>Esribe tus críticas</h3>
+               <a href="#">Comenta tus impresiones sobre cualquier libro que hayas leído.</a>
+           </section>
+           <div class="clearfix-padding">
+                  
+           </div>
+
+
+
+
+           <!--Servicios-->
+           <div class="one-third-padding" id="services">
+               <h3>LECTURA</h3>
+               <img src="img/slider/slider4.jpeg" alt="Librobañera">
+               <a href="./paginas/lectura.html">Disfruta leyendo obras libre de Copyright.</a>
+               
+           </div>
+
+           <div class="one-third-padding" id="services">
+            <h3>PUBLICA</h3>
+            <img src="img/slider/slider5.jpg" alt="lápiz">
+            <a href="./paginas/publicatuhistoria.html">Comparte tu obra con la comunidad</a>
+            
+        </div>
+
+        <div class="one-third-padding" id="services">
+            <h3>CONTACTO</h3>
+            <img src="img/slider/slider6.jpeg" alt="lápiz">
+            <a href="./paginas/contacto.html">Estamos para cualquier consulta</a>
+            
+        </div>
+
+
+
+           <footer class="foot-copy">
+            <p>
+                &copy; <a href="#" target="_blank" >ReadSpace.com</a>
+            </p>
+           </footer>
+
+
+    <!--SCRIPTS-->
+
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){     //Cuando el documento carge, hace esta funcion
+        $('.slider1').bxSlider({
+            mode: 'fade'
+        })
+        $('.slider2').bxSlider({
+            mode: 'fade'
+        })
+        $('.slider3').bxSlider({
+            mode: 'fade'
+        })
+
+        })
+    </script>
+
+
+</body>
+</html>
